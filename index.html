@@ -3,78 +3,157 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="stylesheet.css" />
+  <title>Hansi Chandrasena | Portfolio</title>
+  <link rel="stylesheet" href="cyberheat.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">Hansi</a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-  <!-- ===== Header Section ===== -->
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm Hansi Chandrasena</p>
-    
-    <!-- Profile image -->
-    <img src="profile_Photo.jpg" alt="My Profile" width="200" style="border-radius: 50%; margin-top: 10px;" />
+  <!-- Hero Section -->
+  <header id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Hansi Chandrasena</h1>
+        <h2>Software Developer</h2>
+        <p>Creating innovative solutions through code</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/hansi-chandrasena-437866348" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Pabodesl" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:chandrasenahansi108@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <a href="#about" class="btn">Explore More <i class="fas fa-arrow-down"></i></a>
+      </div>
+      <div class="hero-image">
+        <img src="profile_Photo.jpg" alt="Hansi Chandrasena" />
+      </div>
+    </div>
   </header>
 
-  <!-- ===== About Section ===== -->
-  <section>
-    <h2>About Me</h2>
-    <p>This is my personal portfolio to showcase my projects and skills.</p>
-  </section>
-
-  <!-- ===== Projects Section ===== -->
-  <section>
-    <h2>My Projects</h2>
-
-    <!-- Project 1: HarvestEase -->
-    <div>
-      <h3>HarvestEase</h3>
-      <img src="crop_tracking.png" alt="HarvestEase" width="300" />
-      <p>
-        A smart farming solution featuring Crop Tracking (automated fertilization),
-        Inventory Management (spoilage alerts via SMS), Financial Dashboard (profit analysis),
-        and Smart Plant Care (AI-powered disease diagnosis).
-      </p>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm a passionate software developer with expertise in creating efficient and scalable solutions. My journey in technology has equipped me with diverse skills to tackle complex problems.</p>
+          <p>When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and mentoring aspiring developers.</p>
+          <div class="skills">
+            <h3>Technical Skills</h3>
+            <div class="skill-tags">
+              <span>JavaScript</span>
+              <span>Python</span>
+              <span>HTML/CSS</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>SQL</span>
+            </div>
+          </div>
+          <a href="assets/Hansi-Chandrasena-Resume.pdf" download class="btn">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- You can add more projects like below -->
-    <!--
-    <div>
-      <h3>Another Project</h3>
-      <img src="your_project_image.png" alt="Another Project" width="300" />
-      <p>Short description about the project.</p>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="crop_tracking.png" alt="HarvestEase" />
+          </div>
+          <div class="project-info">
+            <h3>HarvestEase</h3>
+            <p>A smart farming solution featuring automated fertilization, inventory management with spoilage alerts, financial dashboard, and AI-powered disease diagnosis.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 (Placeholder) -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/400x250" alt="Project 2" />
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Platform</h3>
+            <p>Full-featured online shopping platform with user authentication, product management, and payment integration.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn btn-small btn-outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    -->
   </section>
 
-  <!-- ===== Resume Section ===== -->
-  <section>
-    <h2>Resume</h2>
-    <p>Click below to download my resume:</p>
-    <a href="assets/Hansi-Chandrasena-Resume.pdf" download>
-      <button style="padding: 10px 20px; font-size: 16px;">Download Resume</button>
-    </a>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>chandrasenahansi108@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>+94 71 369 7553</p>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <p>linkedin.com/in/hansi-chandrasena</p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
   </section>
 
-  <!-- ===== Contact Section ===== -->
-  <section>
-    <h2>Contact Me</h2>
-    <p>Email: chandrasenahansi108@gmail.com</p>
-    <p>Phone: +94 71 369 7553</p>
-    <p>
-      LinkedIn:
-<a href="https://www.linkedin.com/in/hansi-chandrasena-437866348" target="_blank">
-  linkedin.com/in/hansi-chandrasena-437866348
-</a>
-    </p>
-  </section>
-
-  <!-- ===== Footer ===== -->
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Hansi Chandrasena | All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Hansi Chandrasena. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
